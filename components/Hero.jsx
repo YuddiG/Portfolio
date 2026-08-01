@@ -113,7 +113,7 @@ export default function Hero({ c, scrollTo }) {
             <button
               className="btn-outline"
               style={{ padding: '11px 26px', borderRadius: 8, fontSize: '0.85rem' }}
-              onClick={() => window.open('https://linkedin.com/in/uditganglani', '_blank')}
+              onClick={() => window.open('https://www.linkedin.com/in/udit-ganglani/', '_blank')}
             >
               LinkedIn ↗
             </button>

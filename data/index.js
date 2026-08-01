@@ -6,8 +6,8 @@
 export const CONTACT = {
   email:          'yuddi.ganglani26@gmail.com',
   phone:          '+353 89 959 8233',
-  linkedin:       'https://linkedin.com/in/uditganglani',
-  linkedinLabel:  'linkedin.com/in/uditganglani',
+  linkedin:       'https://www.linkedin.com/in/udit-ganglani/',
+  linkedinLabel:  'linkedin.com/in/udit-ganglani',
   location:       'Dublin, Ireland',
   visa:           'Stamp 1G — No Sponsorship Required',
 };
