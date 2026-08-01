@@ -1,0 +1,137 @@
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; }
+
+/* ── Ticker ──────────────────────────────────────────────── */
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.ticker-inner {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker 52s linear infinite;
+}
+.ticker-inner:hover { animation-play-state: paused; }
+
+/* ── Entrance animations ─────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fadeUp   { animation: fadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.delay-1  { animation-delay: 0.05s; }
+.delay-2  { animation-delay: 0.15s; }
+.delay-3  { animation-delay: 0.25s; }
+.delay-4  { animation-delay: 0.35s; }
+.delay-5  { animation-delay: 0.45s; }
+
+/* ── Profile glow ────────────────────────────────────────── */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(201, 168, 76, 0.18); }
+  50%      { box-shadow: 0 0 42px rgba(201, 168, 76, 0.38); }
+}
+.glow-pulse { animation: glowPulse 3s ease-in-out infinite; }
+
+/* ── Navigation ──────────────────────────────────────────── */
+.nav-item {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 1.5px;
+  background: var(--gold);
+  transition: width 0.25s;
+}
+.nav-item:hover::after,
+.nav-item.active::after { width: 100%; }
+
+/* ── Skill bars ──────────────────────────────────────────── */
+.skill-bar {
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  width: 0;
+  transition: width 1.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ── Card hover lift ─────────────────────────────────────── */
+.lift { transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1); }
+.lift:hover { transform: translateY(-5px); }
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.btn-gold {
+  background: linear-gradient(135deg, #B8932C, var(--gold-light), var(--gold));
+  background-size: 200% 100%;
+  color: #0A1628;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  transition: background-position 0.4s, transform 0.2s;
+  letter-spacing: 0.03em;
+}
+.btn-gold:hover { background-position: 100% 0; transform: translateY(-2px); }
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.2s, transform 0.2s;
+  letter-spacing: 0.03em;
+}
+.btn-outline:hover { background: rgba(201, 168, 76, 0.1); transform: translateY(-2px); }
+
+/* ── Gradient text ───────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, var(--gold) 0%, #F0D878 50%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Scrollbar ───────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #040D1A; }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+/* ── Form resets ─────────────────────────────────────────── */
+input, textarea {
+  font-family: 'Inter', sans-serif;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input::placeholder, textarea::placeholder { color: #3A5A7A; }
+
+/* ── Responsive helpers ──────────────────────────────────── */
+@media (max-width: 720px) {
+  .desktop-only { display: none !important; }
+}
+@media (min-width: 721px) {
+  .mobile-only  { display: none !important; }
+}

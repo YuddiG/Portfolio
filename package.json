@@ -1,0 +1,15 @@
+{
+  "name": "udit-ganglani-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio — Udit Ganglani, ACCA Affiliate | MSc Finance | CFA Level I Candidate",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  }
+}
