@@ -73,7 +73,7 @@ export default function Portfolio() {
         <title>Udit Ganglani | Finance Professional</title>
         <meta
           name="description"
-          content="ACCA Affiliate | MSc Finance Graduate (DCU) | CFA Level I Candidate | FP&A Specialist based in Dublin, Ireland."
+          content="ACCA Affiliate | MSc Finance Graduate (DCU) | FP&A Specialist based in Dublin, Ireland."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 

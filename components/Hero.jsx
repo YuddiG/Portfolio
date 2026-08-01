@@ -80,7 +80,7 @@ export default function Hero({ c, scrollTo }) {
             color: c.sec, letterSpacing: '0.06em',
             lineHeight: 1.7, marginBottom: 20,
           }}>
-            ACCA AFFILIATE  ·  MSc FINANCE  ·  CFA LEVEL I CANDIDATE
+            ACCA AFFILIATE  ·  MSc FINANCE  ·  FP&A SPECIALIST
           </p>
 
           <p className="fadeUp delay-4" style={{
