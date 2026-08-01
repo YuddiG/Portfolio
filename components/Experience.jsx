@@ -93,27 +93,7 @@ export default function Experience({ c }) {
               </div>
             ))}
 
-            {/* Retail footnote */}
-            <div style={{ display: 'flex', gap: '1.75rem', paddingLeft: '3rem', position: 'relative', opacity: 0.6 }}>
-              <div style={{
-                position: 'absolute', left: 11, top: 20,
-                width: 14, height: 14, borderRadius: '50%',
-                background: 'transparent', border: `2px solid ${c.bdr}`,
-              }} />
-              <div style={{
-                flex: 1,
-                background: c.card2, border: `1px dashed ${c.bdr}`,
-                borderRadius: 12, padding: '1.2rem',
-              }}>
-                <h3 style={{ fontWeight: 600, fontSize: '0.88rem', color: c.sec, marginBottom: 4 }}>
-                  Earlier Retail Experience
-                </h3>
-                <p style={{ color: c.sec, fontSize: '0.81rem', lineHeight: 1.55 }}>
-                  Senior Sales Associate at Levi&apos;s · Sales Associate at Max Fashion —
-                  customer relationship management and communication foundations.
-                </p>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>

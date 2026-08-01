@@ -51,6 +51,19 @@ export const EXPERIENCES = [
       'Maintained fixed asset register with depreciation schedules; liaised with operations on capex requests and approvals.',
     ],
   },
+  {
+    title:    'Assistant of Accounting',
+    company:  "Shree Shyam's Resources",
+    location: 'India',
+    period:   '2018 – 2020',
+    color:    '#D97706',
+    bullets: [
+      'Maintained day-to-day bookkeeping records including accounts payable, accounts receivable, and journal entries across the business.',
+      'Assisted with preparation of monthly financial statements and management reports for senior review.',
+      'Performed bank reconciliations and ledger maintenance as part of the month-end close process.',
+      'Supported senior accountants with tax compliance, vendor payment processing, and payroll administration.',
+    ],
+  },
 ];
 
 export const EDUCATION = [
@@ -123,10 +136,9 @@ export const SKILLS = [
 ];
 
 export const CERTIFICATIONS = [
-  { name: 'ACCA Affiliate',         body: 'ACCA',          year: '2023',        status: 'Awarded',   statusColor: '#22c55e', icon: '✅' },
-  { name: 'Xero Advisor Certified', body: 'Xero',          year: '2023',        status: 'Certified', statusColor: '#1AB4D7', icon: '✅' },
-  { name: 'CFA Level I',            body: 'CFA Institute', year: 'In Progress', status: 'Candidate', statusColor: '#3B82F6', icon: '📘' },
-  { name: 'Power BI Data Analyst',  body: 'Microsoft',     year: 'Pursuing',    status: 'Pursuing',  statusColor: '#F59E0B', icon: '📗' },
+  { name: 'ACCA Affiliate',         body: 'ACCA',      year: '2023',     status: 'Awarded',   statusColor: '#22c55e', icon: '✅' },
+  { name: 'Xero Advisor Certified', body: 'Xero',      year: '2023',     status: 'Certified', statusColor: '#1AB4D7', icon: '✅' },
+  { name: 'Power BI Data Analyst',  body: 'Microsoft', year: 'Pursuing', status: 'Pursuing',  statusColor: '#F59E0B', icon: '📗' },
 ];
 
 export const PROJECTS = [
