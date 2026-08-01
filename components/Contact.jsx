@@ -10,6 +10,7 @@ const FIELDS = [
 
 const INFO_ITEMS = [
   { icon: '📧', label: 'Email',    value: CONTACT.email,        href: `mailto:${CONTACT.email}` },
+  { icon: '📞', label: 'Phone',    value: CONTACT.phone,        href: `tel:${CONTACT.phone}` },
   { icon: '💼', label: 'LinkedIn', value: CONTACT.linkedinLabel, href: CONTACT.linkedin },
   { icon: '📍', label: 'Location', value: CONTACT.location,     href: null },
   { icon: '✅', label: 'Visa',     value: CONTACT.visa,         href: null },
