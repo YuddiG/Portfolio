@@ -1,8 +1,8 @@
 const STATS = [
-  { value: '6+',  label: 'Years Exp.' },
-  { value: 'ACCA', label: 'Affiliate' },
+  { value: '6+',   label: 'Years Exp.' },
+  { value: 'ACCA', label: 'Member' },
   { value: 'MSc',  label: 'Finance, DCU' },
-  { value: 'CFA',  label: 'Level I Cand.' },
+  { value: 'FP&A', label: 'Specialist' },
 ];
 
 export default function Hero({ c, scrollTo }) {

@@ -3,7 +3,7 @@ import SectionHeader from './SectionHeader';
 const HIGHLIGHTS = [
   { icon: '🌍', heading: 'International Career',   desc: 'UAE & India — FMCG, F&B, and financial services sectors' },
   { icon: '📊', heading: 'FP&A Specialist',         desc: 'Financial modelling, budgeting, forecasting & variance analysis' },
-  { icon: '🎓', heading: 'Dual Qualification',      desc: 'ACCA Affiliate + MSc Finance (DCU) — professional and academic credentials' },
+  { icon: '🎓', heading: 'Dual Qualification',      desc: 'Qualified ACCA Member + MSc Finance (DCU) — professional and academic credentials' },
   { icon: '🤝', heading: 'Business Partnering',     desc: 'Translating financial data into strategic insight for senior stakeholders' },
   { icon: '💡', heading: 'Tech-enabled Finance',    desc: 'Power BI, Python, Excel — elevating FP&A delivery through data tools' },
   { icon: '🔬', heading: 'Research Depth',          desc: 'CFA Research Challenge Finalist; MSc dissertation in EU banking econometrics' },
@@ -34,7 +34,7 @@ export default function About({ c }) {
           <div style={{ flex: '1 1 340px' }}>
             {[
               'With nearly six years of international finance experience spanning the UAE and India, I have built a comprehensive skill set across FP&A, management accounting, financial reporting, audit liaison, and strategic business partnering. My career spans FMCG trading, food & beverage, and multi-entity group environments.',
-              'Holding the ACCA Affiliate designation and an MSc in Finance from Dublin City University (2026), I combine professional accounting rigour with advanced financial theory. Academic work includes an econometric dissertation on EU bank stability and a CFA Research Challenge Ireland Finals appearance for equity research on Cairn Homes plc.',
+              'Holding full ACCA membership and an MSc in Finance from Dublin City University (2026), I combine professional accounting rigour with advanced financial theory. Academic work includes an econometric dissertation on EU bank stability and a CFA Research Challenge Ireland Finals appearance for equity research on Cairn Homes plc.',
               'Currently based in Dublin on a Stamp 1G post-study work visa — requiring no employer sponsorship — I am actively seeking FP&A, commercial finance, or financial analysis opportunities where I can contribute analytical depth and commercial insight.',
             ].map((para, i) => (
               <p key={i} style={{ color: c.sec, lineHeight: 1.9, marginBottom: 16, fontSize: '0.96rem' }}>
