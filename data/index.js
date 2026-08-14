@@ -77,13 +77,13 @@ export const EDUCATION = [
     note:        'Key Areas: Financial Modelling · Corporate Finance · Financial Markets · Data Analysis. CFA Research Challenge Ireland Finalist (2026) — equity research on Cairn Homes plc. Dissertation: EU bank stability econometrics (GARCH, GMM, OLS panel, 2010–2023).',
   },
   {
-    degree:      'ACCA Affiliate',
+    degree:      'Qualified ACCA Member',
     institution: 'Association of Chartered Certified Accountants',
     location:    'Global',
-    year:        'Sep 2024',
-    badge:       'Professional Qualification',
+    year:        'Aug 2026',
+    badge:       'Full Professional Membership',
     emoji:       '📋',
-    note:        'All professional examinations completed across financial reporting, audit & assurance, taxation, performance management, and advanced financial management.',
+    note:        'Full ACCA membership admitted August 2026. All professional examinations completed across financial reporting, audit & assurance, taxation, performance management, and advanced financial management.',
   },
   {
     degree:      'BSc (Hons) Applied Accounting',
@@ -136,7 +136,7 @@ export const SKILLS = [
 ];
 
 export const CERTIFICATIONS = [
-  { name: 'ACCA Affiliate',         body: 'ACCA',      year: 'Sep 2024', status: 'Awarded',   statusColor: '#22c55e', icon: '✅' },
+  { name: 'Qualified ACCA Member',   body: 'ACCA',      year: 'Aug 2026', status: 'Member',    statusColor: '#22c55e', icon: '✅' },
   { name: 'Xero Advisor Certified', body: 'Xero',      year: '2023',     status: 'Certified', statusColor: '#1AB4D7', icon: '✅' },
   { name: 'Power BI Data Analyst',  body: 'Microsoft', year: 'Pursuing', status: 'Pursuing',  statusColor: '#F59E0B', icon: '📗' },
 ];

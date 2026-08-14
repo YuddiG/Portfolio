@@ -32,7 +32,7 @@ export default function Footer({ c }) {
         fontSize: '0.58rem', letterSpacing: '0.2em',
         color: '#3A5470', marginBottom: 18,
       }}>
-        ACCA AFFILIATE  ·  MSC FINANCE  ·  FP&A SPECIALIST  ·  DUBLIN
+        QUALIFIED ACCA MEMBER  ·  MSC FINANCE  ·  FP&A SPECIALIST  ·  DUBLIN
       </p>
 
       {/* Nav links */}
