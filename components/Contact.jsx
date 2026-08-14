@@ -17,25 +17,39 @@ const INFO_ITEMS = [
 ];
 
 export default function Contact({ c }) {
-  const [form, setForm]     = useState({ name: '', email: '', subject: '', message: '' });
+  const [form, setForm]       = useState({ name: '', email: '', subject: '', message: '' });
   const [loading, setLoading] = useState(false);
   const [sent,    setSent]    = useState(false);
+  const [error,   setError]   = useState(false);
 
   const handleChange = (key) => (e) => setForm(prev => ({ ...prev, [key]: e.target.value }));
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) return;
 
     setLoading(true);
-    // TODO: replace with your preferred form backend (e.g. Resend, Formspree, EmailJS).
-    // For now this simulates a successful send after 1.3 s.
-    setTimeout(() => {
+    setError(false);
+
+    try {
+      const res = await fetch('https://formspree.io/f/mvkpqqya', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body:    JSON.stringify(form),
+      });
+
+      if (res.ok) {
+        setSent(true);
+        setForm({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setSent(false), 5000);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
       setLoading(false);
-      setSent(true);
-      setForm({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setSent(false), 5000);
-    }, 1300);
+    }
   };
 
   const inputStyle = (c) => ({
@@ -123,6 +137,17 @@ export default function Contact({ c }) {
                   marginBottom: 18, color: '#22c55e', fontSize: '0.84rem',
                 }}>
                   ✅ Message sent! I&apos;ll be in touch shortly.
+                </div>
+              )}
+
+              {error && (
+                <div style={{
+                  background: 'rgba(239,68,68,0.1)',
+                  border: '1px solid rgba(239,68,68,0.3)',
+                  borderRadius: 8, padding: '11px 15px',
+                  marginBottom: 18, color: '#ef4444', fontSize: '0.84rem',
+                }}>
+                  ❌ Something went wrong. Please email directly at yuddi.ganglani26@gmail.com
                 </div>
               )}
 
